@@ -5,7 +5,7 @@ import {useQuery} from "@tanstack/react-query";
 import {getGroupAttendanceById, getGroupAttendanceList} from "../../api/group";
 
 const Attendance = () => {
-  const [groupId, setGroupId] = useState(3);
+  const [groupId, setGroupId] = useState(null);
   // const [memberList, setMemberList] = useRecoilState(memberListState);
   //
   // useEffect(() => {
