@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import GroupList from "./GroupList";
 
 const GroupInfo = () => {
-  const [param, setParam] = useState({});
+  const [params, setParams] = useState({});
   return (
     <div>
       <div className="page-header">
@@ -13,7 +13,7 @@ const GroupInfo = () => {
           <div className="card">
             <div className="card-body">
               <div className="table-responsive">
-                <GroupList param={param}/>
+                <GroupList params={params}/>
               </div>
             </div>
           </div>

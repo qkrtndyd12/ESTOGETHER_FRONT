@@ -110,6 +110,12 @@ const Sidebar = ({location}) => {
             <i className="mdi mdi-account-multiple menu-icon"></i>
           </Link>
         </li>
+        <li className={ isPathActive('/attendance') ? 'nav-item active' : 'nav-item' }>
+          <Link className="nav-link" to="/attendance">
+            <span className="menu-title"><Trans>출석체크</Trans></span>
+            <i className="mdi mdi-account-multiple menu-icon"></i>
+          </Link>
+        </li>
         {/*<li className={ isPathActive('/basic-ui') ? 'nav-item active' : 'nav-item' }>*/}
         {/*  <div className={ state.basicUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => toggleMenuState('basicUiMenuOpen') } data-toggle="collapse">*/}
         {/*    <span className="menu-title"><Trans>Basic UI Elements</Trans></span>*/}

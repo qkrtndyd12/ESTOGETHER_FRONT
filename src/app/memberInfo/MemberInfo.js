@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import MemberList from "../memberInfo/MemberList";
 
 const MemberInfo = () => {
-  const [param, setParam] = useState({});
+  const [params, setParams] = useState({});
   return (
     <div>
       <div className="page-header">
@@ -19,7 +19,7 @@ const MemberInfo = () => {
           <div className="card">
             <div className="card-body">
               <div className="table-responsive">
-                <MemberList param={param}/>
+                <MemberList params={params}/>
               </div>
             </div>
           </div>

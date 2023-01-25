@@ -42,6 +42,7 @@ const AppRoutes = () => {
       <Switch>
         <Route exact path="/memberInfo" component={ MemberInfo } />
         <Route exact path="/groupInfo" component={ GroupInfo } />
+        <Route exact path="/attendance" component={ Attendance } />
         {/*<Route exact path="/dashboard" component={ Dashboard } />*/}
 
 

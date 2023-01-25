@@ -2,8 +2,8 @@ import React from 'react';
 import {useQuery} from "@tanstack/react-query";
 import {getGroupList} from "../../api/group";
 
-const GroupList = ({param}) => {
-  const { isLoading, isError, data, error } = useQuery(['groupList'], () => getGroupList(param), {
+const GroupList = ({params}) => {
+  const { isLoading, isError, data, error } = useQuery(['groupList'], () => getGroupList(params), {
     refetchOnWindowFocus: false,
     retry: 0,
     onSuccess: data => {
